@@ -1,14 +1,12 @@
-import { Link, Route } from "react-router"
+import {Route } from "react-router"
 import { Routes } from "react-router"
+import NavBar from "./NavBar"
 
 function App() {
 
   return (
     <>
-    <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
-    <Link to="/login">Login</Link>
-
+    <NavBar/>
     <Routes>
       <Route path="/" element={<h1>Home Page</h1>}/>
       <Route path="/about" element={<h1>About Page</h1>}/>
