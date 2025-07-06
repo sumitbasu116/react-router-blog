@@ -13,7 +13,7 @@ function Users() {
     ]
 
   return (
-    <div>
+    <div style={{marginLeft:20}}>
     <h1>Users List Page</h1>
     {
         userData.map(
