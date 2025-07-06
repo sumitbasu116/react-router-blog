@@ -18,7 +18,7 @@ function Users() {
     {
         userData.map(
             (item,index)=>(
-                <h2 key={index}>{item.name}</h2>
+                <Link key={index} to={"/users/"+item.id}><h4 key={index}>{item.name}</h4></Link>
             )
         )
     }

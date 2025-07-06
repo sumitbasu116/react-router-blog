@@ -10,6 +10,7 @@ import Student from "./Student"
 import Details from "./Details"
 import Department from "./Department"
 import Users from "./Users"
+import UserDetail from "./UserDetail"
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
             </Route>
           </Route>
           <Route path="/users" element={<Users />} />
+          <Route path="/users/:id" element={<UserDetail/>} />
           <Route path="/*" element={<Navigate to="/login" />} />
         </Route>
 
