@@ -5,6 +5,7 @@ import NavBar from "./NavBar"
 import About from "./About"
 import Login from "./Login"
 import PageNotFound from "./PageNotFound"
+import { Navigate } from "react-router"
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/login" element={<Login/>}/>
-      <Route path="/*" element={<PageNotFound/>}/>
+      {/* <Route path="/*" element={<PageNotFound/>}/> */}
+      <Route path="/*" element={<Navigate to="/login"/>}/>
     </Routes>
     </div>
   )
