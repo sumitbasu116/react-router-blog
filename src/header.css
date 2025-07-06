@@ -15,7 +15,7 @@ body{
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    width: 350px;
+    width: 400px;
 }
 
 .header ul li{
