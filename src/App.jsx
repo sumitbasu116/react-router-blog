@@ -18,12 +18,12 @@ function App() {
       <Routes>
         <Route to="/" element={<NavBar />}>
           <Route path="/" element={<Home />} />
-          
-          <Route path="/user">
-            <Route path="/user/about" element={<About />} />
-          <Route path="/user/login" element={<Login />} />
+          <Route path="in">
+            <Route path="/in/user">
+              <Route path="/in/user/about" element={<About />} />
+              <Route path="/in/user/login" element={<Login />} />
+            </Route>
           </Route>
-
           <Route path="/*" element={<Navigate to="/login" />} />
         </Route>
 

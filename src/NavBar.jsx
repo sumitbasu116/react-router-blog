@@ -15,10 +15,10 @@ function NavBar() {
                             <Link to="/" className="link">Home</Link>
                         </li>
                         <li>
-                            <Link to="/user/about" className="link">About</Link>
+                            <Link to="in/user/about" className="link">About</Link>
                         </li>
                         <li>
-                            <Link to="/user/login" className="link">Login</Link>
+                            <Link to="in/user/login" className="link">Login</Link>
                         </li>
                         <li>
                             <Link to="/college" className="link">College</Link>
