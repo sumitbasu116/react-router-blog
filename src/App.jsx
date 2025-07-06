@@ -4,6 +4,7 @@ import Home from "./Home"
 import NavBar from "./NavBar"
 import About from "./About"
 import Login from "./Login"
+import PageNotFound from "./PageNotFound"
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/login" element={<Login/>}/>
-      <Route path="/*" element={<h1>Page Not Found</h1>}/>
+      <Route path="/*" element={<PageNotFound/>}/>
     </Routes>
     </div>
   )
