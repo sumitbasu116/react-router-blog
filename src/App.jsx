@@ -26,9 +26,8 @@ function App() {
               <Route path="/in/user/login" element={<Login />} />
             </Route>
           </Route>
-          <Route path="/users" element={<Users />} />
           <Route path="/users/:id/name/:name" element={<UserDetail/>} />
-          <Route path="/users/list" element={<Users />} />
+          <Route path="/users/list?" element={<Users />} />
           <Route path="/*" element={<Navigate to="/login" />} />
         </Route>
 
