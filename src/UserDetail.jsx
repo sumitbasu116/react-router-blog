@@ -8,7 +8,10 @@ function UserDetail() {
     <div style={{marginLeft:20}}>
     <h1>Users Details Page</h1>
     <h3>User id is:{paramsData.id}</h3>
-    <h3>User id is:{paramsData.name}</h3>
+    {
+        paramsData.name?<h3>User Name is:{paramsData.name}</h3>:null
+    }
+    
     <Link to="/users"><h4>Back</h4></Link>
     
     </div>
