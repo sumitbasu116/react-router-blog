@@ -4,8 +4,11 @@ import Home from "./Home"
 import NavBar from "./NavBar"
 import About from "./About"
 import Login from "./Login"
-import PageNotFound from "./PageNotFound"
 import { Navigate } from "react-router"
+import College from "./College"
+import Student from "./Student"
+import Details from "./Details"
+import Department from "./Department"
 
 function App() {
 
@@ -16,8 +19,12 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/login" element={<Login/>}/>
-      {/* <Route path="/*" element={<PageNotFound/>}/> */}
       <Route path="/*" element={<Navigate to="/login"/>}/>
+      <Route path="/college" element={<College/>}>
+        <Route path="/student" element={<Student/>}/>
+        <Route path="/details" element={<Details/>}/>
+        <Route path="/department" element={<Department/>}/>
+      </Route>
     </Routes>
     </div>
   )
