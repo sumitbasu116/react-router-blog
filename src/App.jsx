@@ -14,18 +14,21 @@ function App() {
 
   return (
     <div>
-    <NavBar/>
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/about" element={<About/>}/>
-      <Route path="/login" element={<Login/>}/>
-      <Route path="/*" element={<Navigate to="/login"/>}/>
-      <Route path="/college" element={<College/>}>
-        <Route path="student" element={<Student/>}/>
-        <Route path="details" element={<Details/>}/>
-        <Route path="department" element={<Department/>}/>
-      </Route>
-    </Routes>
+
+      <Routes>
+        <Route to="/" element={<NavBar />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/*" element={<Navigate to="/login" />} />
+        </Route>
+
+        <Route path="/college" element={<College />}>
+          <Route path="student" element={<Student />} />
+          <Route path="details" element={<Details />} />
+          <Route path="department" element={<Department />} />
+        </Route>
+      </Routes>
     </div>
   )
 }
