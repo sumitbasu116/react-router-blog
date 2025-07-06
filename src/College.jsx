@@ -6,6 +6,7 @@ function College() {
 
   return (
     <div className="college" style={{textAlign:'center'}}>
+    <Link to="/">Go Back To Home</Link>
     <h1>College Page</h1>
     <Link className="link" to="student">Student</Link>
     <Link className="link" to="department">Department</Link>
