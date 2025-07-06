@@ -12,7 +12,7 @@ function NavBar() {
                 <div>
                     <ul>
                         <li>
-                            <NavLink to="/" className="link">Home</NavLink>
+                            <NavLink to="/" className={({isActive})=>isActive?'link custom-active':'link'}>Home</NavLink>
                         </li>
                         <li>
                             <NavLink to="in/user/about" className="link">About</NavLink>
