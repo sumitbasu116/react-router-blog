@@ -21,9 +21,9 @@ function App() {
       <Route path="/login" element={<Login/>}/>
       <Route path="/*" element={<Navigate to="/login"/>}/>
       <Route path="/college" element={<College/>}>
-        <Route path="/student" element={<Student/>}/>
-        <Route path="/details" element={<Details/>}/>
-        <Route path="/department" element={<Department/>}/>
+        <Route path="student" element={<Student/>}/>
+        <Route path="details" element={<Details/>}/>
+        <Route path="department" element={<Department/>}/>
       </Route>
     </Routes>
     </div>
