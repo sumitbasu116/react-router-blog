@@ -9,6 +9,7 @@ import College from "./College"
 import Student from "./Student"
 import Details from "./Details"
 import Department from "./Department"
+import Users from "./Users"
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
               <Route path="/in/user/login" element={<Login />} />
             </Route>
           </Route>
+          <Route path="/users" element={<Users />} />
           <Route path="/*" element={<Navigate to="/login" />} />
         </Route>
 

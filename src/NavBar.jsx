@@ -23,6 +23,9 @@ function NavBar() {
                         <li>
                             <Link to="/college" className="link">College</Link>
                         </li>
+                        <li>
+                            <Link to="/users" className="link">Users</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
